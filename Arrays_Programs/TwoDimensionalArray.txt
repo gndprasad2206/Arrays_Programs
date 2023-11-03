@@ -1,0 +1,32 @@
+// Complete and execute java Program for transpose of a matrix/two dimensional array
+class TwoDimensionalArray {
+
+	public static void main(String args[]) {
+
+		//creating a matrix  
+		int original[][]={{1,3,4},{2,4,3},{3,4,5}};    
+    
+		//creating another matrix to store transpose of a matrix  
+		int transpose[][]=new int[3][3];  //3 rows and 3 columns  
+    
+		//Write code to transpose a matrix
+		for(int i=0;i<original.length;i++){
+      for(int j=0;j<original[0].length;j++){
+        transpose[j][i]=original[i][j];
+      }
+    }
+    for(int i=0;i<original.length;i++){
+      for(int j=0;j<original[0].length;j++){
+        System.out.print(transpose[i][j]+" ");
+      }
+      System.out.println();
+    }
+		/*Print matrix after transpose:
+		1 2 3 
+		3 4 4 
+		4 3 5 
+		
+		*/
+		    
+   }
+}
